@@ -1,0 +1,82 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+.banner{
+    width: 100%;
+    height: 120vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(ART1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
+.calculator{
+    width: 101.2%;
+    margin: auto;
+    display: flex;
+    padding: 35px 0;
+    background-color: black;
+
+}
+    
+.calculator h1{
+    text-decoration: none;
+    color: antiquewhite;
+    position: relative;
+    margin-left: 41%;
+    font-size: xx-large;
+    font-weight: bold;
+
+}
+.calculator h1::after{
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: antiquewhite;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+.container{
+    max-width: 400px;
+    margin: 10vh auto 0 auto;
+    background-color: chartreuse;
+    box-shadow: 0px 0px 43px 17px rgba(153,153,153,1);
+    position: relative;
+}
+#display{
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 25px;
+    border: 6px solid #000;
+}
+.buttons{
+    display: grid;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.buttons > div{
+border-top: 1px solid #999;
+border-right: 1px solid #999;
+}
+.button{
+    border: 0.5px solid #999;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+#equal{
+    background-color: blue;
+    color: antiquewhite;
+    width: 100%;
+}
+.button:hover{
+    background-color: black;
+    color: antiquewhite;
+    transition: 0.6s ease-in-out;
+}
